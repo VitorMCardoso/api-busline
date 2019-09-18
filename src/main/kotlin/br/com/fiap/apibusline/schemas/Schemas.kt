@@ -15,5 +15,5 @@ data class User(
 data class Bus(
         @Id val id: String? = null,
         val busLine: Number,
-        val line: Array<String>
+        val line: MutableList<String>
 )

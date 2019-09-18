@@ -5,6 +5,7 @@ import br.com.fiap.apibusline.services.BusLineService
 import org.springframework.data.domain.Page
 import org.springframework.web.bind.annotation.*
 import org.springframework.data.domain.Pageable
+import org.springframework.data.domain.Sort
 import java.util.*
 
 @RestController
@@ -12,7 +13,7 @@ import java.util.*
 class BusLineController(private val busLineService: BusLineService) {
 
     @GetMapping
-    fun getAll(pageable: Pageable): Page<Bus> = busLineService.getAll(pageable)
+    fun getAll(pageable: Pageable): MutableList<Bus> = busLineService.getAll(pageable).content
 
     @GetMapping("{id}")
     fun getById(@PathVariable id: String): Optional<Bus> = busLineService.getById(id)

@@ -4,6 +4,7 @@ import br.com.fiap.apibusline.schemas.Bus
 import br.com.fiap.apibusline.utils.BasicCrud
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
+import org.springframework.data.domain.Sort
 import org.springframework.stereotype.Service
 import java.util.*
 

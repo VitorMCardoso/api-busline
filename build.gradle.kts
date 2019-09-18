@@ -36,7 +36,7 @@ dependencies {
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    implementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
+    compile("org.mongodb:mongodb-driver")
 }
 
 tasks.withType<KotlinCompile> {
