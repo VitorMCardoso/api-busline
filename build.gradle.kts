@@ -37,6 +37,8 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     compile("org.mongodb:mongodb-driver")
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
+    compile("org.springframework.boot:spring-boot-starter-actuator")
 }
 
 tasks.withType<KotlinCompile> {
